@@ -7,7 +7,7 @@
 	</head>
 	<body>
         <br>
-        <h1 align="center" style="color:white" ><br><font face="Lucida Bright">Top 100 Rich People</font></h1>
+        <h1 align="center" style="color:white" ><br><font face="Lucida Bright"> Top 100 Rich People</font></h1>
         <hr size="3px" style="width:30%; margin-left:35% !important; margin-right:35% !important;">
         <div id="hasilscraping_json"></div>
 	</body>
@@ -22,7 +22,7 @@
                     str +="<td>" + data.Nama + "</td>";
                     str +="<td>" + data.Harta + "</td>";
                     str +="<td align='center' width='100px'>" + data.Usia + " Tahun" + "</td>";
-                    
+                    str +='<td><img src= "' + data.Image + '"></td>';
                     str +="<td>" + data.waktu_scraping + "</td></tr>";
                 });
                 str +="</table>";
